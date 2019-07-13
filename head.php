@@ -3,7 +3,7 @@
 //jQuery
 $jquery = <<<EOT
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 EOT;
 
@@ -14,5 +14,21 @@ $bootstrap = <<<EOT
 
 EOT;
 
+//Shared JS
+$sharedjs = <<<EOT
+
+<script src="js/shared.js"></script>
+
+EOT;
+
+//Shared CSS
+$sharedcss = <<<EOT
+
+<link rel="stylesheet" href="css/shared.css">
+
+EOT;
+
 echo $jquery,
-    $bootstrap;
+    $bootstrap,
+    $sharedjs,
+    $sharedcss;
