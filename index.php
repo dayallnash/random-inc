@@ -1,11 +1,11 @@
 <html>
-    <header>
+    <head>
+        <?php include 'head.php'; ?>
+    </head>
 
-    </header>
     <body>
-
     </body>
+
     <footer>
-        
     </footer>
 </html>
