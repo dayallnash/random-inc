@@ -37,3 +37,10 @@ function writeCompanyName(data)
         }
     }
 }
+
+function colourCompanyName()
+{
+    var hex = randomHex();
+
+    $('#top-hook > h1').css('color', hex);
+}
