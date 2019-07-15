@@ -48,9 +48,13 @@
 
     <footer>
         <script>
-            $(document).ready(function(){
-                generateCompanyName();
-            });
+            $(document).ready(
+                function()
+                {
+                    generateCompanyName();
+                    colourCompanyName();
+                }
+            );
         </script>
     </footer>
 </html>
