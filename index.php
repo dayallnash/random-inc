@@ -2,17 +2,20 @@
     <head>
         <?php include 'head.php'; ?>
         <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
 
-        <img src="assets/img/placeholderimg.jpg" width="50%" height="50%"></img>
+        <img src="assets/img/placeholderimg.jpg" class="blur" width="100%" height="100%">
         <div id="top-hook">
             <h1 id="top-hook-heading">We are a company that money</h1>
             <p id="top-hook-p">We make the money.</p>
+            <a href="#scrolldown"><i class="fas fa-chevron-circle-down fa-3x top-hook-down-icon"></i></a>
         </div>
 
         <div id="block1">
+            <a name="scrolldown"></a>
             <h2 id="block1-h">We value the thing</h2>
             <p id="block1-p">Because that's what our customers love.</p>
         </div>

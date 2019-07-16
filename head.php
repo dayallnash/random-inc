@@ -28,7 +28,15 @@ $sharedcss = <<<EOT
 
 EOT;
 
+//FontAwesome JS
+$fontawesome = <<<EOT
+
+<script src="https://kit.fontawesome.com/e4b4be80ca.js"></script>
+
+EOT;
+
 echo $jquery,
     $bootstrap,
     $sharedjs,
-    $sharedcss;
+    $sharedcss,
+    $fontawesome;
