@@ -52,6 +52,7 @@
                 function()
                 {
                     generateCompanyName();
+                    generateRandomPolys();
                     colourCompanyName();
                 }
             );

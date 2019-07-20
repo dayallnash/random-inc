@@ -1,6 +1,6 @@
 --initialisation script
 
-CREATE SCHEMA 'CORPCONTENT' ;
+CREATE SCHEMA CORPCONTENT ;
 
 CREATE TABLE `corpcontent`.`block_content` (
   `id` INT NOT NULL AUTO_INCREMENT,
