@@ -14,7 +14,7 @@ if (isset($_GET['randomPolys'])) {
     curl_close($ch);
 };
 
-    if ($response) {
-        header('Content-Type: application/json');
-        echo $response;
-    };
+if ($response) {
+    header('Content-Type: application/json');
+    echo $response;
+};

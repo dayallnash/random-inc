@@ -21,8 +21,6 @@ function generateRandomPolys()
 
 function drawRandomPolys(data)
 {
-    console.log(data.polygons[0].length);
-
     var count = data.polygons.length; //gets how many shapes
     var parent = document.getElementById('top-hook'); //lets us know it's going into the top div.
 
@@ -36,8 +34,6 @@ function drawRandomPolys(data)
         var context = canvas.getContext('2d');
         var originX = Math.floor(data.polygons[i][0].x / 10);
         var originY = Math.floor(data.polygons[i][0].y / 10);
-        var x = false;
-        var y = false;
 
         for (i2 = 0; i2 < data.polygons[i].length ; i2++)
             {
