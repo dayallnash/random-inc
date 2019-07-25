@@ -24,3 +24,36 @@
 .blur {
     filter: blur(10px);
 }
+
+/* body formatting */
+
+.block-content {
+    padding: 40px;
+}
+
+.block-content p, .block-content {
+    padding: 0px 40px;
+}
+
+#block1, #block3 {
+
+}
+
+#block2, #block4 {
+    text-align: right;
+}
+
+ul {
+    display: inline-block;
+    padding: 0px 80px 0px 0px;
+}
+
+li {
+    text-align: left;
+}
+
+h3 {
+    font-style: italic;
+    color: darkgrey;
+    font-weight: normal;
+}
