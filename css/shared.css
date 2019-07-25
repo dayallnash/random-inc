@@ -1,0 +1,11 @@
+.warning {
+    background-color: #ff4499;
+    color: white;
+    text-align: center;
+}
+
+.warning > span {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
