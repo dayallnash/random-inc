@@ -7,6 +7,8 @@
 
     <body>
 
+        <?php include 'warning.php'; ?>
+
         <img src="assets/img/placeholderimg.jpg" class="blur" width="100%" height="100%">
         <div id="top-hook">
             <h1 id="top-hook-heading">We are a company that money</h1>
