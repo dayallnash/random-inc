@@ -2,7 +2,7 @@
     <head>
         <?php include 'head.php'; ?>
         <script src="js/index.js"></script>
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
     </head>
 
     <body>
@@ -16,13 +16,13 @@
             <a href="#scrolldown"><i class="fas fa-chevron-circle-down fa-3x top-hook-down-icon"></i></a>
         </div>
 
-        <div id="block1">
+        <div id="block1" class="block-content">
             <a name="scrolldown"></a>
             <h2 id="block1-h">We value the thing</h2>
             <p id="block1-p">Because that's what our customers love.</p>
         </div>
 
-        <div id="block2">
+        <div id="block2" class="block-content">
             <h2 id="block2-h">We do the thing right</h2>
             <p id="block2-p">Because we check things like:</p>
             <ul>
@@ -33,13 +33,13 @@
             </ul>
         </div>
 
-        <div id="block3">
+        <div id="block3" class="block-content">
             <h2 id="block3-h">In a variety of different styles</h2>
             <p id="block3-p">Handmade using real ink</p>
             <!-- Maybe slideshow of pictures?       -->
         </div>
 
-        <div id="block4">
+        <div id="block4" class="block-content">
             <h2 id="block4-h">But don't just take our word for it</h2>
             <p id="block4-p">Here's something they said.</p>
             <div class="testimonials">
@@ -57,6 +57,7 @@
                 function()
                 {
                     generateCompanyName();
+                    generateRandomPolys();
                     colourCompanyName();
                 }
             );
