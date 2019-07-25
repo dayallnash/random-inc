@@ -16,7 +16,7 @@
 
         <div id="block1" class="block-content">
             <a name="scrolldown"></a>
-            <h2 id="block1-h" <style="display: inline;">We value the thing</h2>
+            <h2 id="block1-h">We value the thing</h2>
             <p id="block1-p">Because that's what our customers love.</p>
         </div>
 
