@@ -15,9 +15,15 @@ if (isset($_GET['businessImage'])) {
 
     $results = $database->query('SELECT file_path FROM image_repo');
 
-    $resultCount = count($results);
+    $filePath = '/assets/img/placeholderimg.jpg';
 
-    $randIndex = rand(0, $resultCount);
+    if (!empty($results)) {
+        $resultCount = count($results);
+        $randIndex = rand(0, $resultCount);
 
-    return json_encode(['file_path' => $results[$randIndex]['file_path']]);
+        $filePath = $results[$randIndex]['file_path'];
+    }
+
+    header('Content-Type: application/json');
+    echo json_encode(['file_path' => $filePath]);
 }

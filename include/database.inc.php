@@ -4,7 +4,7 @@ require_once('config.inc.php');
 
 class Database
 {
-    public function query(string $stmt): array
+    public function query(string $stmt)
     {
         $mysqli = $this->connect();
 
@@ -29,7 +29,7 @@ class Database
         return $results;
     }
 
-    private function connect()
+    private function connect(): mysqli
     {
         $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD);
 
