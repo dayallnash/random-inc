@@ -2,18 +2,24 @@
     <head>
         <?php include 'head.php'; ?>
         <script src="js/index.js"></script>
+        <script type="text/javascript" src="js/JsQueryRotate.js"></script>
         <link rel="stylesheet" href="css/index.css" type="text/css">
     </head>
 
     <body>
 
         <?php include 'warning.php'; ?>
-
+        <div id="banner-img">
         <img src="assets/img/placeholderimg.jpg" class="blur" width="100%" height="100%">
+        </div>
+
         <div id="top-hook">
             <h1 id="top-hook-heading">We are a company that money</h1>
             <p id="top-hook-p">We make the money.</p>
             <a href="#scrolldown"><i class="fas fa-chevron-circle-down fa-3x top-hook-down-icon"></i></a>
+        </div>
+
+        <div id="poly-div">
         </div>
 
         <div id="block1" class="block-content">

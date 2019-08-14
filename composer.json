@@ -1,0 +1,11 @@
+{
+    "name": "dale/random-inc",
+    "description": "Randomly generate corporate website",
+    "type": "project",
+    "require": {
+        "unsplash/unsplash": "^2.4"
+    },
+    "require-dev": {
+        "unsplash/unsplash": "^2.4"
+    }
+}

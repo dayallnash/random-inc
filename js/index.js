@@ -57,12 +57,13 @@ function generateRandomPolys()
 function drawRandomPolys(data)
 {
     var count = data.polygons.length; //gets how many shapes
-    var parent = document.getElementById('top-hook'); //lets us know it's going into the top div.
+    var parent = document.getElementById('poly-div'); //lets us know it's going into the top div.
 
     for (i = 0; i < count; i++)
     {
         var canvas = document.createElement("canvas");
         canvas.id = "canvas" + i;
+        canvas.className = "polys";
         canvas.height = "100";
         canvas.width = "100";
         parent.appendChild(canvas); //This creates a canvas tag per shape dynamically.
@@ -87,5 +88,37 @@ function drawRandomPolys(data)
         context.lineTo(originX, originY);
         context.stroke();
 
+    }
+    placeRandomPolys()
+}
+
+function placeRandomPolys() {
+
+    const amountOfPolys = $(".polys").length;
+
+    for (i = 0; i < amountOfPolys; i++)
+    {
+
+    target = $("#canvas" + i);
+    let incrementingPosition = Math.floor((Math.random() * 50) * (i * 5));
+
+    if ((i % 2) === 1)
+        {
+            target.css("position", "absolute");
+            target.css("top", incrementingPosition + "px");
+            target.css("left", "40px");
+        }
+    else
+        {
+            target.css("position", "absolute");
+            target.css("top", incrementingPosition + "px");
+            target.css("right", "40px");
+        }
+    let angle = 0;
+    setInterval(function()
+        {
+            angle += 1;
+            $(".polys").rotate(angle);
+        },40);
     }
 }
