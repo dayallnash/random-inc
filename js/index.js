@@ -98,27 +98,26 @@ function placeRandomPolys() {
 
     for (i = 0; i < amountOfPolys; i++)
     {
+        target = $("#canvas" + i);
+        let incrementingPosition = Math.floor((Math.random() * 50) * (i * 5));
 
-    target = $("#canvas" + i);
-    let incrementingPosition = Math.floor((Math.random() * 50) * (i * 5));
-
-    if ((i % 2) === 1)
-        {
-            target.css("position", "absolute");
-            target.css("top", incrementingPosition + "px");
-            target.css("left", "40px");
-        }
-    else
-        {
-            target.css("position", "absolute");
-            target.css("top", incrementingPosition + "px");
-            target.css("right", "40px");
-        }
-    let angle = 0;
-    setInterval(function()
-        {
-            angle += 1;
-            $(".polys").rotate(angle);
-        },40);
+        if ((i % 2) === 1)
+            {
+                target.css("position", "absolute");
+                target.css("top", incrementingPosition + "px");
+                target.css("left", "40px");
+            }
+        else
+            {
+                target.css("position", "absolute");
+                target.css("top", incrementingPosition + "px");
+                target.css("right", "40px");
+            }
+        let angle = 0;
+        setInterval(function()
+            {
+                angle += 1;
+                $(".polys").rotate(angle);
+            },40);
     }
 }
