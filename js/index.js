@@ -113,11 +113,14 @@ function placeRandomPolys() {
                 target.css("top", incrementingPosition + "px");
                 target.css("right", "40px");
             }
-        let angle = 0;
-        setInterval(function()
-            {
-                angle += 1;
-                $(".polys").rotate(angle);
-            },40);
+
+        setInterval(function(){
+            $(".polys").rotate({
+            angle: 0,
+            animateTo: 359,
+            duration: 2000,
+            easing: function(x, t, b, c, d) { return b+(t/d)*c ; }
+        });
+    }, 2000);
     }
 }
